@@ -1,0 +1,48 @@
+.instructor {
+    background-color: var(--wp--preset--color--white);
+    border-radius: var(--border-radius-cards);
+    padding: 2rem;
+    text-align: center;
+
+    @media (max-width: 600px) {
+        margin: 0 2rem !important;
+    }
+
+    img {
+        width: 50%;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: center;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    h2 {
+        margin-bottom: .5rem;
+    }
+
+    .ikf-instructor-meta__position,
+    .ikf-instructor-meta__rank {
+        font-weight: 500;
+        font-size: var(--wp--preset--font-size--medium);
+        margin: 0;
+    }
+    
+    .ikf-instructor-meta__rank {
+        color: var(--wp--preset--color--accent-4);
+    }
+
+    .entry-content {
+        margin-top: 1rem;
+    }
+
+    .entry-content > * {
+        font-size: var(--wp--preset--font-size--small) !important;
+        text-align: left;
+    }
+
+    li {
+        list-style-type: disc;
+    }
+}

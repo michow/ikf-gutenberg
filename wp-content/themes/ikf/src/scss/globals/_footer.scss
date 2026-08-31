@@ -1,0 +1,31 @@
+footer {
+    margin-top: 0;
+}
+
+.footer__socials {
+    gap: .5rem;
+
+    .i-facebook img {
+        width: 48px;
+    }
+
+    .i-instagram img {
+        width: 44px;
+    }
+
+    .i-gmap img {
+        width: 48px;
+    }
+
+    a:hover img {
+        opacity: 0.8;
+    }
+}
+
+.background-inverse {
+    background-color: var(--color-soft-black);
+
+    > * {
+        color: var(--color-soft-white);
+    }
+}

@@ -1,0 +1,19 @@
+.members-grid {
+    background-color: var(--color-soft-black);
+    margin-top: 0;
+    padding: 4rem 0;
+
+    .is-layout-grid {
+        gap: 3rem;
+    }
+
+    @media (min-width: 600px) and (max-width: 1340px) {
+        padding-inline: 2rem;
+    }
+
+    .columns-2.is-layout-grid {
+        @media (max-width: 781px) {
+            grid-template-columns: 1fr !important;
+        }
+    }
+}

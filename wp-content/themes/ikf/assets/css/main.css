@@ -1,0 +1,216 @@
+:root {
+  --color-soft-black: #1E1E1E;
+  --color-soft-white: #E0E0E0;
+  --border-radius-cards: 28px;
+}
+
+body .wp-block-paragraph strong {
+  font-weight: 500;
+}
+
+.wp-block-button.is-style-outline a:hover {
+  background-color: color-mix(in srgb, var(--wp--preset--color--base) 90%, transparent) !important;
+  color: var(--wp--preset--color--contrast) !important;
+}
+
+footer {
+  margin-top: 0;
+}
+
+.footer__socials {
+  gap: 0.5rem;
+}
+.footer__socials .i-facebook img {
+  width: 48px;
+}
+.footer__socials .i-instagram img {
+  width: 44px;
+}
+.footer__socials .i-gmap img {
+  width: 48px;
+}
+.footer__socials a:hover img {
+  opacity: 0.8;
+}
+
+.background-inverse {
+  background-color: var(--color-soft-black);
+}
+.background-inverse > * {
+  color: var(--color-soft-white);
+}
+
+.instructor {
+  background-color: var(--wp--preset--color--white);
+  border-radius: var(--border-radius-cards);
+  padding: 2rem;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .instructor {
+    margin: 0 2rem !important;
+  }
+}
+.instructor img {
+  width: 50%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+  display: block;
+}
+.instructor h2 {
+  margin-bottom: 0.5rem;
+}
+.instructor .ikf-instructor-meta__position,
+.instructor .ikf-instructor-meta__rank {
+  font-weight: 500;
+  font-size: var(--wp--preset--font-size--medium);
+  margin: 0;
+}
+.instructor .ikf-instructor-meta__rank {
+  color: var(--wp--preset--color--accent-4);
+}
+.instructor .entry-content {
+  margin-top: 1rem;
+}
+.instructor .entry-content > * {
+  font-size: var(--wp--preset--font-size--small) !important;
+  text-align: left;
+}
+.instructor li {
+  list-style-type: disc;
+}
+
+.member {
+  background-color: var(--wp--preset--color--white);
+  border-radius: var(--border-radius-cards);
+  padding: 2rem;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .member {
+    margin: 0 2rem !important;
+  }
+}
+.member h2 {
+  margin-bottom: 0.5rem;
+}
+.member h2:first-child {
+  margin-top: 0;
+}
+.member .ikf-member-meta__position {
+  font-weight: 500;
+  font-size: var(--wp--preset--font-size--medium);
+  margin: 0;
+}
+.member img {
+  width: 30%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 781px) {
+  .member img {
+    width: 50%;
+  }
+}
+.member .ikf-member-meta__position {
+  text-align: center;
+}
+.member .entry-content {
+  margin-top: 1rem;
+}
+.member .entry-content > * {
+  font-size: var(--wp--preset--font-size--small) !important;
+  text-align: left;
+}
+.member li {
+  list-style-type: disc;
+}
+
+.instructors-grid {
+  background-color: var(--color-soft-black);
+  padding: 4rem 0;
+}
+.instructors-grid .is-layout-grid {
+  gap: 3rem;
+}
+@media (min-width: 600px) and (max-width: 1340px) {
+  .instructors-grid {
+    padding-inline: 2rem;
+  }
+}
+@media (max-width: 781px) {
+  .instructors-grid .columns-3.is-layout-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.members-grid {
+  background-color: var(--color-soft-black);
+  margin-top: 0;
+  padding: 4rem 0;
+}
+.members-grid .is-layout-grid {
+  gap: 3rem;
+}
+@media (min-width: 600px) and (max-width: 1340px) {
+  .members-grid {
+    padding-inline: 2rem;
+  }
+}
+@media (max-width: 781px) {
+  .members-grid .columns-2.is-layout-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.featured-instructor h2 {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.featured-instructor h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 20%;
+  height: 1px;
+  background-color: var(--wp--preset--color--accent-4);
+}
+.featured-instructor p {
+  margin: 0;
+  font-weight: 700;
+}
+.featured-instructor p:last-child {
+  color: var(--wp--preset--color--accent-4);
+}
+@media (max-width: 781px) {
+  .featured-instructor figure {
+    text-align: center;
+  }
+  .featured-instructor figure img {
+    max-width: 70%;
+  }
+}
+@media (max-width: 781px) {
+  .featured-instructor__heading {
+    text-align: center;
+  }
+  .featured-instructor__heading h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 781px) {
+  .featured-instructor__content {
+    gap: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
