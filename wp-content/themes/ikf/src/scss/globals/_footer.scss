@@ -21,11 +21,3 @@ footer {
         opacity: 0.8;
     }
 }
-
-.background-inverse {
-    background-color: var(--color-soft-black);
-
-    > * {
-        color: var(--color-soft-white);
-    }
-}
