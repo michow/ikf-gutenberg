@@ -1,0 +1,8 @@
+.wp-block-button {
+    &.is-style-outline a {
+        &:hover {
+            background-color: color-mix(in srgb, var(--wp--preset--color--base) 90%, transparent) !important;
+            color: var(--wp--preset--color--contrast) !important;
+        }
+    }
+}

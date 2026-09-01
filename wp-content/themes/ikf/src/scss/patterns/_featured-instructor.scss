@@ -1,0 +1,51 @@
+.featured-instructor {
+    h2 {
+        margin-bottom: 2rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 20%;
+            height: 1px;
+            background-color: var(--wp--preset--color--accent-4);
+        }
+    }
+    p {
+        margin: 0;
+        font-weight: 700;
+
+        &:last-child {
+            color: var(--wp--preset--color--accent-4);
+        }
+    }
+
+    figure {
+        @media (max-width: 781px) {
+            text-align: center;
+
+            img {
+                max-width: 70%;
+            }
+        }
+    }
+
+    &__heading {
+        @media (max-width: 781px) {
+            text-align: center;
+
+            h2::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    &__content {
+        @media (max-width: 781px) {
+            gap: 0;
+        }
+    }
+}

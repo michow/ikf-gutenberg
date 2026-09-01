@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/js/main.js"],
+  "sourcesContent": ["/**\n * IKF theme scripts\n *\n * Entry point for front-end JS. Bundled to assets/js/main.js via `npm run watch`.\n */\n\ndocument.addEventListener( 'DOMContentLoaded', () => {\n\t// Theme interactions go here.\n} );\n"],
+  "mappings": ";;AAMA,WAAS,iBAAkB,oBAAoB,MAAM;AAAA,EAErD,CAAE;",
+  "names": []
+}

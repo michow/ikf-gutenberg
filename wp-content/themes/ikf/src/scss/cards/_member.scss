@@ -1,0 +1,55 @@
+.member {
+    background-color: var(--wp--preset--color--white);
+    border-radius: var(--border-radius-cards);
+    padding: 2rem;
+    text-align: center;
+
+    @media (max-width: 600px) {
+        margin: 0 2rem !important;
+    }
+
+    h2 {
+        margin-bottom: .5rem;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    
+    .ikf-member-meta__position {
+        font-weight: 500;
+        font-size: var(--wp--preset--font-size--medium);
+        margin: 0;
+    }
+
+    img {
+        width: 30%;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: center;
+        margin: 0 auto;
+        display: block;
+
+        @media (max-width: 781px) {
+            width: 50%;
+        }
+    }
+
+    .ikf-member-meta__position{
+        text-align: center;
+    }
+
+    .entry-content {
+        margin-top: 1rem;
+    }
+
+    .entry-content > * {
+        font-size: var(--wp--preset--font-size--small) !important;
+        text-align: left;
+    }
+
+    li {
+        list-style-type: disc;
+    }
+}

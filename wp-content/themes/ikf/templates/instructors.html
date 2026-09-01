@@ -1,0 +1,30 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+		<!-- wp:post-title {"level":1, "textAlign":"center"} /-->
+		<!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<section class="instructors-grid alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+		<div class="wp-block-columns alignwide">
+			<!-- wp:query {"query":{"perPage":24,"postType":"instructor","order":"asc","orderBy":"title","inherit":false},"layout":{"type":"default"}} -->
+			<div class="wp-block-query">
+				<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+					<!-- wp:post-featured-image /-->
+					<!-- wp:post-title {"isLink":false} /-->
+					<!-- wp:ikf/instructor-meta /-->
+					<!-- wp:post-content /-->
+				<!-- /wp:post-template -->
+			</div>
+			<!-- /wp:query -->
+		</div>
+	</section>
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
