@@ -8,6 +8,25 @@ body .wp-block-paragraph strong {
   font-weight: 500;
 }
 
+.background-inverse {
+  background-color: var(--color-soft-black);
+}
+.background-inverse > * {
+  color: var(--color-soft-white);
+}
+
+.external a::after {
+  content: "";
+  background-image: url(../images/icon-external.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.25rem;
+}
+
 .wp-block-button.is-style-outline a:hover {
   background-color: color-mix(in srgb, var(--wp--preset--color--base) 90%, transparent) !important;
   color: var(--wp--preset--color--contrast) !important;
@@ -31,13 +50,6 @@ footer {
 }
 .footer__socials a:hover img {
   opacity: 0.8;
-}
-
-.background-inverse {
-  background-color: var(--color-soft-black);
-}
-.background-inverse > * {
-  color: var(--color-soft-white);
 }
 
 .instructor {

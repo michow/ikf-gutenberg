@@ -4,3 +4,25 @@ body {
 		font-weight: 500;
 	}
 }
+
+.background-inverse {
+    background-color: var(--color-soft-black);
+
+    > * {
+        color: var(--color-soft-white);
+    }
+}
+
+.external {
+	a::after {
+		content: '';
+		background-image: url(../images/icon-external.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: .25rem;
+	}
+}
